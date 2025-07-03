@@ -1,6 +1,8 @@
 // Deque - Double Ended Queue
 #include <deque>
 
+using namespace std;
+
 // pair<int, int>, string, ...
 deque<int> sample;
 

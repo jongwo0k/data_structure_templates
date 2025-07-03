@@ -1,6 +1,8 @@
 // FIFO - First In First Out
 #include <queue>
 
+using namespace std;
+
 // pair<int, int>, string, ...
 queue<int> sample;
 
@@ -14,6 +16,6 @@ sample.back();  // return 2 (맨 뒤)
 
 sample.size();  // return 3
 
-sample.pop();   // remove 1 (3 2)
+sample.pop();   // remove 1 (3 2 front부터 없어짐)
 
 sample.empty(); // return 0 (X -> 0, O -> 1)

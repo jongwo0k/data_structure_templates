@@ -4,6 +4,8 @@
 #include <string>
 #include <functional>
 
+using namespace std;
+
 // 사용자 지정 우선순위 구조체
 struct PrioritySample{
     string name;

@@ -1,6 +1,8 @@
 // LIFO - Last In First Out
 #include <stack>
 
+using namespace std;
+
 // pair<int, int>, string, ...
 stack<int> sample;
 
