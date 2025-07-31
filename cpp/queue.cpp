@@ -19,3 +19,20 @@ sample.size();  // return 3
 sample.pop();   // remove 1 (3 2 front부터 없어짐)
 
 sample.empty(); // return 0 (X -> 0, O -> 1)
+
+// n,k 요세푸스
+queue<int> josephus;
+
+// 큐에 1~n 채우기
+for (int i = 1; i <= n; i++) {
+	josephus.push(i);
+}
+
+// k번째 제거
+while (josephus.size() > 1) {
+	for (int i = 0; i < k - 1; i++) {
+		josephus.push(josephus.front()); // front -> back
+		josephus.pop();
+	}
+	josephus.pop(); // k번째 제거
+}
